@@ -1,9 +1,9 @@
 # Site settings
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://vibbycom.github.io/curiustv.github.io/" # the base hostname & protocol for your site
+url: "http://vibbycom.github.io/curiustv.github.io/" # the base hostname & protocol for your site
 
-canonical: "https://www.curius.tv"
+canonical: "http://www.curius.tv"
 
 # Build settings
 markdown: kramdown
