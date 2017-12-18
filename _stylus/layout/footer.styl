@@ -1,0 +1,71 @@
+//
+footer
+    background-color $dark-bg
+    font-size 12px
+    span(1/1)
+
+    .container
+        padding 60px 15px
+        .footer-logo
+            +below($sm)
+                display none
+            svg
+                width 130px
+            .text,
+            .shape
+                fill #fff
+        ul
+            margin-left 0px
+            padding-left 0px
+            margin-bottom 0px
+        ul li
+            a
+                color $link-color
+                text-transform uppercase
+                font-weight 500
+                &:hover
+                    color #fff
+
+        .company
+            span(1/4)
+            +below($sm)
+                span()
+
+        .connect
+            span(3/4)
+            +below($sm)
+                span()
+            ul
+                margin-top emRhythm(4, 1)
+                +above($sm)
+                    float right
+                +below($sm)
+                    text-align center
+                li
+                    text-align center
+                    display inline-block
+                    +below($sm)
+                        margin-bottom 10px
+                        &:not(:first-child)
+                            margin-left 20px
+                    +above($sm)
+                        float left
+                        &:not(:last-child)
+                            margin-right 30px 
+            +below($sm)
+                span()
+            text-align right
+
+        .legal
+            span(3/4)
+            +below($sm)
+                span()
+            ul
+                li
+                    text-align center
+                    +above($sm)
+                        float right
+                        &:not(:last-child)
+                            margin-right 20px
+                .copyright
+                    color $light-color

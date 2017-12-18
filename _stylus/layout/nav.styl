@@ -1,0 +1,143 @@
+//Nav
+
+.logo
+    width 84px
+    display block
+    margin-top 10px
+    float left
+    margin-right 30px
+    svg
+        fill #fff
+        
+.scroll
+    svg
+        .shape
+            transition all 0.4s ease
+            fill #6A7BFF
+
+nav.main-nav
+    position fixed
+    top 0
+    left 0
+    right 0
+    height 52px
+    z-index 9999
+    align-items center
+    padding-top 20px
+    transition all 0.2s ease
+    font-size 12px
+    text-transform uppercase
+    font-weight 500
+    
+    .container
+        overflow hidden
+        // position relative
+
+    ul,li
+        display inline-block
+        line-height 45px
+    ul
+        margin-left 0px
+        margin-bottom 0px
+    li a
+        color #fff - 10%
+        display inline-block
+        &:hover
+            color #fff
+    li
+        float left
+        border-top 4px solid transparent
+        transition all 0.4s ease
+        &:hover
+        &.active
+            +above($sm + 30)
+                border-top 4px solid #fff
+
+    .left-nav
+        float left
+        li
+            &:not(:last-child)
+                margin-right 30px
+            
+    .right-nav
+        float right
+        transition all 0.4s ease
+        li
+            +above($sm + 30)
+                &:not(:first-child)
+                    margin-left 30px
+                
+
+    &.scroll
+        background-color $nav-bg
+        padding-top 0
+    
+    .navs
+        transition all 0.4s ease
+        +below($sm + 30)
+            position fixed
+            right -100%
+            top 0
+            bottom 0
+            background-color $nav-bg - 15%
+            padding 60px 30px 0px 30px
+            box-shadow 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.16)
+            ul,li,a
+                float none
+                display block
+            .right-nav
+                clear both
+                float left
+        &.mobile-menu
+            right 0
+    
+    .menu-icon
+        float right
+        right 100px
+        cursor pointer
+        z-index: 10000
+        user-select none
+        margin-top 17px
+        display block
+        &:focus
+            outline none
+        +above($sm + 30)
+            display none
+        .sh
+            content ""
+            width 30px
+            height 3px
+            background-color #fff
+            position relative
+            margin-bottom 5px
+            transition all 0.2s ease
+            border-radius 2px
+            &:focus
+                outline none
+        &--active .sh2
+            background-color rgba(0, 0, 0, 0)
+            transform translateX(-5px)
+        &--active .sh1
+            transform rotate(45deg) translateX(4px) translateY(7px)
+        &--active .sh3
+            transform rotate(-45deg) translateX(4px) translateY(-8px)
+        &--active .text
+            display none
+        .sh3
+            margin 0px
+        
+.consumer-tooltip
+    display none
+    position absolute
+    top 65px
+    right 15px
+    z-index 1
+    text-align right
+    padding 10px 15px
+    background rgba(255,255,255,0.7)
+    border-radius 2px
+    text-transform none
+    &:hover
+        background rgba(255,255,255,0.9)
+    +below($sm)
+        display none !important

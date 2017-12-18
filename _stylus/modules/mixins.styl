@@ -1,0 +1,23 @@
+//
+
+w(n)
+    width 100%
+    max-width n
+    margin-left auto
+    margin-right auto
+
+//Wrap - adds pading on mobile sizes
+wrap()
+    padding 0 20px
+    +below(600px)
+        padding 0 3%
+
+
+// from http://nicolasgallagher.com/micro-clearfix-hack/
+cf()
+    &:before
+    &:after
+        content: ""
+        display: table
+    &:after
+        clear: both

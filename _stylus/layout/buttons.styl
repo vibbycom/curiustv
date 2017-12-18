@@ -1,0 +1,75 @@
+//
+
+
+a
+    // background-color #aff
+
+.cta
+    color #fff
+    padding 13px 25px
+    border-radius 2px
+    display inline-block
+    text-transform uppercase
+    font-size 16px
+    font-weight 500
+
+
+@keyframes spin
+    from
+        transform rotate(0deg)
+    to
+        transform rotate(360deg)
+
+
+.cta__primary
+    @extend .cta
+    background $link-color
+    .fa
+        margin-right 5px
+        color $link-color
+    svg
+        width 18px
+        height 18px
+        margin-right 5px
+    &:hover
+        svg
+        .fa
+            animation spin 600ms ease-in-out
+        
+
+.cta__primary--big
+    margin-top emRhythm(6, 1)
+    @extend .cta__primary
+    background-color #fff
+    color $link-color
+    display inline-flex
+    align-items center
+    justify-content center
+    .fa
+        color $link-color
+        font-size 24px
+        margin-right 7px
+    svg
+        width 24px
+        height 24px
+        margin-right 7px
+    #illustration
+        fill $link-color
+        
+.cta__primary--sm
+    @extend .cta__primary
+    color $link-color
+    display inline-flex
+    align-items center
+    justify-content center
+    &:hover
+        background-color darken($link-color, 20%)
+    .fa
+        color #fff
+        
+.cta__secondary
+    margin-top emRhythm(6, 1)
+    @extend .cta
+    background-color $h-color + 20%
+    &:hover
+        background-color $h-color + 10%
