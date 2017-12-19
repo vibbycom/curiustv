@@ -1,13 +1,14 @@
 //Nav
 
 .logo
-    width 84px
     display block
     margin-top 10px
     float left
     margin-right 30px
-    svg
-        fill #fff
+    font-size 28px
+    font-weight 900
+    font-style italic
+    text-transform uppercase
         
 .scroll
     svg
@@ -16,17 +17,15 @@
             fill #6A7BFF
 
 nav.main-nav
-    position fixed
     top 0
     left 0
     right 0
-    height 52px
     z-index 9999
     align-items center
     padding-top 20px
+    padding-bottom 20px
     transition all 0.2s ease
-    font-size 12px
-    text-transform uppercase
+    font-size 14px
     font-weight 500
     
     .container
@@ -40,18 +39,12 @@ nav.main-nav
         margin-left 0px
         margin-bottom 0px
     li a
-        color #fff - 10%
         display inline-block
-        &:hover
-            color #fff
+
     li
         float left
         border-top 4px solid transparent
         transition all 0.4s ease
-        &:hover
-        &.active
-            +above($sm + 30)
-                border-top 4px solid #fff
 
     .left-nav
         float left
