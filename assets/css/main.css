@@ -952,6 +952,9 @@ nav.main-nav .menu-icon .sh3 {
   bottom: 20px;
   top: initial;
 }
+#createHighlightBtnDiv-vimeo-0 .cc-container .cc-btn-container-share {
+  bottom: initial;
+}
 footer {
   background-color: #2e3341;
   font-size: 12px;
