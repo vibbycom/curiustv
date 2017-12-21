@@ -44,6 +44,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: geometricPrecision;
 }
+body.comedy-body {
+  background-color: #181f24;
+}
 a {
   position: relative;
   -webkit-transition: all 0.2s ease;
@@ -678,25 +681,11 @@ nav.main-nav .menu-icon--active .text {
 nav.main-nav .menu-icon .sh3 {
   margin: 0px;
 }
-.consumer-tooltip {
-  display: none;
-  position: absolute;
-  top: 65px;
-  right: 15px;
-  z-index: 1;
-  text-align: right;
-  padding: 10px 15px;
-  background: rgba(255,255,255,0.7);
-  border-radius: 2px;
-  text-transform: none;
-}
-.consumer-tooltip:hover {
-  background: rgba(255,255,255,0.9);
-}
-@media only screen and (max-width: 730px) {
-  .consumer-tooltip {
-    display: none !important;
-  }
+.comedy-nav a,
+.comedy-nav .logo {
+  font-style: normal;
+  text-transform: uppercase;
+  color: #3cced6 !important;
 }
 .cta,
 .cta__primary,
@@ -937,6 +926,23 @@ nav.main-nav .menu-icon .sh3 {
 }
 .landing .other-videos-thumb:hover img {
   opacity: 0.5;
+}
+.landing.comedy .sidebar h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+.landing.comedy .other-videos {
+  background: #33424d;
+  padding-bottom: 50px;
+}
+.landing.comedy .other-videos h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  margin: 30px 0 20px;
 }
 footer {
   background-color: #2e3341;
