@@ -944,6 +944,14 @@ nav.main-nav .menu-icon .sh3 {
   text-transform: uppercase;
   margin: 30px 0 20px;
 }
+#createHighlightBtnDiv-vimeo-0 {
+  position: relative;
+  bottom: 88px;
+}
+#createHighlightBtnDiv-vimeo-0 .cc-container {
+  bottom: 20px;
+  top: initial;
+}
 footer {
   background-color: #2e3341;
   font-size: 12px;
