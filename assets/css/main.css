@@ -828,6 +828,21 @@ nav.main-nav .menu-icon .sh3 {
 .landing .video:nth-child(2n + 1) {
   clear: both;
 }
+@media only screen and (max-width: 992px) {
+  .landing .video {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .landing .video::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
 .landing .video iframe {
   line-height: 0;
 }
@@ -883,6 +898,11 @@ nav.main-nav .menu-icon .sh3 {
 .landing .sidebar:nth-child(2n + 1) {
   clear: both;
 }
+@media only screen and (max-width: 992px) {
+  .landing .sidebar {
+    display: none;
+  }
+}
 .landing .sidebar h1 {
   text-transform: uppercase;
   color: #2ca3ff;
@@ -929,6 +949,36 @@ nav.main-nav .menu-icon .sh3 {
 .landing .other-videos-thumb:nth-child(4n + 1) {
   clear: both;
 }
+@media only screen and (max-width: 992px) {
+  .landing .other-videos-thumb {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .landing .other-videos-thumb::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .landing .other-videos-thumb:nth-child(n) {
+    margin-right: 3%;
+    float: left;
+    clear: none;
+  }
+  .landing .other-videos-thumb:nth-child(2n) {
+    margin-right: 0%;
+    float: right;
+  }
+  .landing .other-videos-thumb:nth-child(2n + 1) {
+    clear: both;
+  }
+}
 .landing .other-videos-thumb a {
   display: inline-block;
 }
@@ -954,6 +1004,22 @@ nav.main-nav .menu-icon .sh3 {
 }
 .landing .other-videos-thumb:hover img {
   opacity: 0.5;
+}
+@media only screen and (max-width: 992px) and (max-width: 544px) {
+  .landing .other-videos-thumb {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+  }
+  .landing .other-videos-thumb::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }
 .landing.comedy .sidebar h1 {
   text-transform: uppercase;
