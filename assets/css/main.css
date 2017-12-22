@@ -599,35 +599,6 @@ nav.main-nav.scroll {
   background-color: #363c4d;
   padding-top: 0;
 }
-nav.main-nav .navs {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-@media only screen and (max-width: 760px) {
-  nav.main-nav .navs {
-    position: fixed;
-    right: -100%;
-    top: 0;
-    bottom: 0;
-    background-color: #2e3341;
-    padding: 60px 30px 0px 30px;
-    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.16);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.16);
-  }
-  nav.main-nav .navs ul,
-  nav.main-nav .navs li,
-  nav.main-nav .navs a {
-    float: none;
-    display: block;
-  }
-  nav.main-nav .navs .right-nav {
-    clear: both;
-    float: left;
-  }
-}
-nav.main-nav .navs.mobile-menu {
-  right: 0;
-}
 nav.main-nav .menu-icon {
   float: right;
   right: 100px;
@@ -836,6 +807,10 @@ nav.main-nav .menu-icon .sh3 {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
+    max-width: 750px;
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto !important;
   }
   .landing .video::after {
     content: '';
