@@ -821,33 +821,6 @@ nav.main-nav .menu-icon .sh3 {
 .landing .video iframe {
   line-height: 0;
 }
-.landing .video #createHighlightBtnDiv-vimeo-0 {
-  position: absolute;
-  bottom: 53px;
-}
-.landing .video #createHighlightBtnDiv-vimeo-0 .cc-container {
-  margin-top: 0;
-  top: initial;
-  left: 10px;
-}
-.landing .video #createHighlightBtnDiv-vimeo-0 .cc-container .cc-btn-container-share {
-  bottom: initial;
-}
-.landing .video #createHighlightBtnDiv-vimeo-0 .vimeo-highlights {
-  height: 10px;
-  left: 0;
-  opacity: 0;
-}
-.landing .video #createHighlightBtnDiv-vimeo-0 .vimeo-highlights .impact-div {
-  height: 8px !important;
-  top: 0 !important;
-}
-.landing .video:hover #createHighlightBtnDiv-vimeo-0 {
-  width: 100%;
-}
-.landing .video:hover #createHighlightBtnDiv-vimeo-0 .vimeo-highlights {
-  opacity: 1;
-}
 .landing .sidebar {
   float: left;
   clear: none;
