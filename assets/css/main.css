@@ -821,6 +821,9 @@ nav.main-nav .menu-icon .sh3 {
 .landing .video iframe {
   line-height: 0;
 }
+.landing .video #createHighlightBtnDiv-vimeo-0 {
+  top: -5px;
+}
 .landing .sidebar {
   float: left;
   clear: none;
