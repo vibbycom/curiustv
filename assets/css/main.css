@@ -773,34 +773,35 @@ nav.main-nav .menu-icon .sh3 {
 .landing img {
   max-width: 100%;
 }
-.landing .video {
+.landing .video-wrapper {
   float: left;
   clear: none;
   text-align: inherit;
   width: 65.66666666666666%;
   margin-left: 0%;
   margin-right: 3%;
-  position: relative;
+  margin-bottom: 60px;
+  background: #000;
 }
-.landing .video::after {
+.landing .video-wrapper::after {
   content: '';
   display: table;
   clear: both;
 }
-.landing .video:nth-child(n) {
+.landing .video-wrapper:nth-child(n) {
   margin-right: 3%;
   float: left;
   clear: none;
 }
-.landing .video:nth-child(2n) {
+.landing .video-wrapper:nth-child(2n) {
   margin-right: 0%;
   float: right;
 }
-.landing .video:nth-child(2n + 1) {
+.landing .video-wrapper:nth-child(2n + 1) {
   clear: both;
 }
 @media only screen and (max-width: 992px) {
-  .landing .video {
+  .landing .video-wrapper {
     float: left;
     clear: none;
     text-align: inherit;
@@ -812,17 +813,30 @@ nav.main-nav .menu-icon .sh3 {
     margin-left: auto;
     margin-right: auto !important;
   }
-  .landing .video::after {
+  .landing .video-wrapper::after {
     content: '';
     display: table;
     clear: both;
   }
 }
-.landing .video iframe {
-  line-height: 0;
+.landing .video-wrapper .video {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
 }
-.landing .video #createHighlightBtnDiv-vimeo-0 {
-  top: -5px;
+.landing .video-wrapper .video iframe {
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.landing .video-wrapper .video #createHighlightBtnDiv-vimeo-0 {
+  position: absolute;
+  width: 100%;
+  bottom: -55px;
+  top: auto;
 }
 .landing .sidebar {
   float: left;

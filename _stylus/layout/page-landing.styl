@@ -2,19 +2,33 @@
 .landing
   img
     max-width 100%
-  .video
+  .video-wrapper
     column(2/3, $cycle:2)
-    position relative
+    margin-bottom 60px
+    background #000
     +below($md)
       span($cycle:0)
       max-width 750px
       float none !important
       margin-left auto
       margin-right auto !important
-    iframe
-      line-height 0
-    #createHighlightBtnDiv-vimeo-0
-      top -5px
+    .video
+      position relative
+      height 0
+      padding-bottom 56.25%
+      iframe
+        line-height 0
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+      #createHighlightBtnDiv-vimeo-0
+        position absolute
+        width 100%
+        bottom -55px
+        top auto
+            
   .sidebar
     column(1/3, $cycle:2)
     +below($md)
