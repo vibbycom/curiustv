@@ -658,6 +658,11 @@ nav.main-nav .menu-icon .sh3 {
   text-transform: uppercase;
   color: #3cced6 !important;
 }
+button {
+  padding: 5px 15px;
+  border: 0;
+  cursor: pointer;
+}
 .cta,
 .cta__primary,
 .cta__primary--big,
@@ -824,7 +829,8 @@ nav.main-nav .menu-icon .sh3 {
   height: 0;
   padding-bottom: 56.25%;
 }
-.landing .video-wrapper .video iframe {
+.landing .video-wrapper .video iframe,
+.landing .video-wrapper .video .bc-player {
   line-height: 0;
   position: absolute;
   top: 0;
@@ -837,6 +843,12 @@ nav.main-nav .menu-icon .sh3 {
   width: 100%;
   bottom: -55px;
   top: auto;
+}
+.landing .video-wrapper .video .vb-container.vb-v2 {
+  bottom: -60px;
+  position: absolute;
+  top: auto;
+  width: 100%;
 }
 .landing .sidebar {
   float: left;

@@ -8,7 +8,7 @@ description: Curius.tv is just that.
   <div class="container">
     <div class="video-wrapper">
       <div class="video">
-        <iframe src="https://player.vimeo.com/video/26905480?autoplay=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+        <video id="player-container-bc" class="video-js bc-player" controls="controls" data-video-id="5723854126001" data-account="5359769130001" data-player="default" data-embed="default" data-application-id=""></video>
       </div>
     </div>
     <div class="sidebar">
@@ -55,4 +55,11 @@ description: Curius.tv is just that.
     </div>
   </div>
 </section>
-<script type="text/javascript" src="https://vibbify-prod.vibby.com/static/vibbify_default.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="//players.brightcove.net/5359769130001/default_default/index.min.js"></script>
+<script type="text/javascript" src="https://vibbify-prod.vibby.com/static/vibbify_curius.min.js"></script>
+
+<!-- <script src="http://localhost:8888/static/vibbify_default.js"></script> -->
+<script>
+var bcPlayerApi = videojs('player-container-bc')
+</script>
