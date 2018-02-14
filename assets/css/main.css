@@ -778,7 +778,7 @@ button {
 .landing img {
   max-width: 100%;
 }
-.landing .video-wrapper {
+.landing .vids-wrapper {
   float: left;
   clear: none;
   text-align: inherit;
@@ -788,25 +788,25 @@ button {
   margin-bottom: 60px;
   background: #000;
 }
-.landing .video-wrapper::after {
+.landing .vids-wrapper::after {
   content: '';
   display: table;
   clear: both;
 }
-.landing .video-wrapper:nth-child(n) {
+.landing .vids-wrapper:nth-child(n) {
   margin-right: 3%;
   float: left;
   clear: none;
 }
-.landing .video-wrapper:nth-child(2n) {
+.landing .vids-wrapper:nth-child(2n) {
   margin-right: 0%;
   float: right;
 }
-.landing .video-wrapper:nth-child(2n + 1) {
+.landing .vids-wrapper:nth-child(2n + 1) {
   clear: both;
 }
 @media only screen and (max-width: 992px) {
-  .landing .video-wrapper {
+  .landing .vids-wrapper {
     float: left;
     clear: none;
     text-align: inherit;
@@ -818,19 +818,19 @@ button {
     margin-left: auto;
     margin-right: auto !important;
   }
-  .landing .video-wrapper::after {
+  .landing .vids-wrapper::after {
     content: '';
     display: table;
     clear: both;
   }
 }
-.landing .video-wrapper .video {
+.landing .vids-wrapper .video {
   position: relative;
   height: 0;
   padding-bottom: 56.25%;
 }
-.landing .video-wrapper .video iframe,
-.landing .video-wrapper .video .bc-player {
+.landing .vids-wrapper .video iframe,
+.landing .vids-wrapper .video .bc-player {
   line-height: 0;
   position: absolute;
   top: 0;
@@ -838,13 +838,13 @@ button {
   width: 100%;
   height: 100%;
 }
-.landing .video-wrapper .video #createHighlightBtnDiv-vimeo-0 {
+.landing .vids-wrapper .video #createHighlightBtnDiv-vimeo-0 {
   position: absolute;
   width: 100%;
   bottom: -55px;
   top: auto;
 }
-.landing .video-wrapper .video .vb-container.vb-v2 {
+.landing .vids-wrapper .video .vb-container.vb-v2 {
   bottom: -60px;
   position: absolute;
   top: auto;
@@ -886,7 +886,7 @@ button {
   font-size: 24px;
   text-align: center;
 }
-.landing .other-videos {
+.landing .other-vids {
   margin-top: 40px;
   float: left;
   clear: none;
@@ -895,12 +895,12 @@ button {
   margin-left: 0%;
   margin-right: 0%;
 }
-.landing .other-videos::after {
+.landing .other-vids::after {
   content: '';
   display: table;
   clear: both;
 }
-.landing .other-videos-thumb {
+.landing .other-vids-thumb {
   float: left;
   clear: none;
   text-align: inherit;
@@ -909,25 +909,25 @@ button {
   margin-right: 3%;
   height: 145px;
 }
-.landing .other-videos-thumb::after {
+.landing .other-vids-thumb::after {
   content: '';
   display: table;
   clear: both;
 }
-.landing .other-videos-thumb:nth-child(n) {
+.landing .other-vids-thumb:nth-child(n) {
   margin-right: 3%;
   float: left;
   clear: none;
 }
-.landing .other-videos-thumb:nth-child(4n) {
+.landing .other-vids-thumb:nth-child(4n) {
   margin-right: 0%;
   float: right;
 }
-.landing .other-videos-thumb:nth-child(4n + 1) {
+.landing .other-vids-thumb:nth-child(4n + 1) {
   clear: both;
 }
 @media only screen and (max-width: 992px) {
-  .landing .other-videos-thumb {
+  .landing .other-vids-thumb {
     float: left;
     clear: none;
     text-align: inherit;
@@ -938,40 +938,40 @@ button {
     margin-bottom: 20px;
     text-align: center;
   }
-  .landing .other-videos-thumb::after {
+  .landing .other-vids-thumb::after {
     content: '';
     display: table;
     clear: both;
   }
-  .landing .other-videos-thumb:nth-child(n) {
+  .landing .other-vids-thumb:nth-child(n) {
     margin-right: 3%;
     float: left;
     clear: none;
   }
-  .landing .other-videos-thumb:nth-child(2n) {
+  .landing .other-vids-thumb:nth-child(2n) {
     margin-right: 0%;
     float: right;
   }
-  .landing .other-videos-thumb:nth-child(2n + 1) {
+  .landing .other-vids-thumb:nth-child(2n + 1) {
     clear: both;
   }
 }
-.landing .other-videos-thumb a {
+.landing .other-vids-thumb a {
   display: inline-block;
 }
-.landing .other-videos-thumb img {
+.landing .other-vids-thumb img {
   opacity: 0.3;
   -webkit-transition: 200ms all ease-in;
   transition: 200ms all ease-in;
 }
-.landing .other-videos-thumb .svg-play {
+.landing .other-vids-thumb .svg-play {
   position: absolute;
   text-align: center;
   left: 0;
   right: 0;
   top: 45px;
 }
-.landing .other-videos-thumb h3 {
+.landing .other-vids-thumb h3 {
   text-align: center;
   color: #fff;
   font-weight: 600;
@@ -979,11 +979,11 @@ button {
   -webkit-transition: 200ms all ease-in;
   transition: 200ms all ease-in;
 }
-.landing .other-videos-thumb:hover img {
+.landing .other-vids-thumb:hover img {
   opacity: 0.5;
 }
 @media only screen and (max-width: 992px) and (max-width: 544px) {
-  .landing .other-videos-thumb {
+  .landing .other-vids-thumb {
     float: left;
     clear: none;
     text-align: inherit;
@@ -992,7 +992,7 @@ button {
     margin-right: 0%;
     text-align: center;
   }
-  .landing .other-videos-thumb::after {
+  .landing .other-vids-thumb::after {
     content: '';
     display: table;
     clear: both;
@@ -1004,11 +1004,11 @@ button {
   font-size: 24px;
   text-align: center;
 }
-.landing.comedy .other-videos {
+.landing.comedy .other-vids {
   background: #33424d;
   padding-bottom: 50px;
 }
-.landing.comedy .other-videos h2 {
+.landing.comedy .other-vids h2 {
   font-size: 18px;
   font-weight: 600;
   color: #999;
