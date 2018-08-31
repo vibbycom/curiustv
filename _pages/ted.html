@@ -12980,13 +12980,24 @@ TED Recommends
 
 var isPlaying = false;
 
-function toogleVideo(e) {
-  if (!isPlaying) {
-    playVideo();
-  } else {
-    pauseVideo();
+function isOurButtonClicked(e) {
+  if (e.target.tagName == 'VB-DIV'
+    || e.target.tagName == 'svg' && e.target.parentNode.tagName == 'VB-DIV'
+    || e.target.tagName == 'path' && e.target.parentNode.parentNode.tagName == 'VB-DIV') {
+    return true;
   }
-  isPlaying = !isPlaying;
+  return false;
+}
+
+function toogleVideo(e) {
+  if (!isOurButtonClicked) {
+    if (!isPlaying) {
+      playVideo();
+    } else {
+      pauseVideo();
+    }
+    isPlaying = !isPlaying;
+  }
 }
 
 function playVideo() {
