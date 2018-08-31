@@ -12990,7 +12990,7 @@ function isOurButtonClicked(e) {
 }
 
 function toogleVideo(e) {
-  if (!isOurButtonClicked) {
+  if (!isOurButtonClicked(e)) {
     if (!isPlaying) {
       playVideo();
     } else {
