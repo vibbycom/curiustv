@@ -12980,7 +12980,7 @@ TED Recommends
 
 var isPlaying = false;
 
-function toogleVideo() {
+function toogleVideo(e) {
   if (!isPlaying) {
     playVideo();
   } else {
@@ -13004,7 +13004,7 @@ function pauseVideo() {
 var playButton = document.getElementById('initial-btn-play');
 var progressBarPlayButton = document.getElementById('progress-bar-control-video');
 var videoContainer = document.getElementById('main-video-container');
-// videoContainer.addEventListener('click', toogleVideo);
+videoContainer.addEventListener('click', toogleVideo);
 bcPlayerApi.on('play', function() {
   playVideo();
 });
