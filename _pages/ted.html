@@ -12,6 +12,14 @@ description: Do Schools Kill Creativity?.
 <script async="" src="./Ken Robinson_ Do schools kill creativity_ _ TED Talk_files/tcn.js"></script>
 <script async="" src="./Ken Robinson_ Do schools kill creativity_ _ TED Talk_files/beacon.js"></script>
 <script async="" src="./Ken Robinson_ Do schools kill creativity_ _ TED Talk_files/analytics.js"></script>
+<style>
+  span#testiranje2:after {
+   content: "Highlight";
+   position: relative;
+   top: 14px;
+   left: -12px;
+  }
+</style>
 <script async="" type="text/javascript"
         src="./Ken Robinson_ Do schools kill creativity_ _ TED Talk_files/gpt.js"></script>
 <script>!function () {
@@ -9557,8 +9565,6 @@ description: Do Schools Kill Creativity?.
   <meta property="og:description"
         content="Sir Ken Robinson makes an entertaining and profoundly moving case for creating an education system that nurtures (rather than undermines) creativity.">
   <!-- (+-CONTENT-IS-LIVE-SUCCESS-+) -->
-  <link href="./Ken Robinson_ Do schools kill creativity_ _ TED Talk_files/core-ecf0c62707f480ec3bc4.chunk.js"
-        rel="prefetch">
   <link href="./Ken Robinson_ Do schools kill creativity_ _ TED Talk_files/global-21a2e64b6ffac691fbba.chunk.css"
         rel="stylesheet">
   <link href="./Ken Robinson_ Do schools kill creativity_ _ TED Talk_files/shed-05ca9cfeb2ab8ea16964.chunk.css"
@@ -10363,6 +10369,19 @@ Search:
     </g>
 </svg></span></div>
                                           <div class=" w:full d:n d:i-b@xxs c:white m-t:.4 ">Rate</div>
+                                        </button>
+                                      </div>
+                                      <div class=" m-b:1 m-x:a t-a:c ">
+                                        <button class=" c:white f:.9 sb ">
+                                          <div class="
+                            b-r:3
+                            d:i-b
+                            v-a:m
+                            w:6
+                            h:6
+                            t-a:c
+                           c:white bg:gray-dd.2"><span id="testiranje2" style="margin-top:5px; margin-left:1px" class="SVGInline  d:i-b o:v w:full h:full p:.5 t-a:c "><!--?xml version="1.0" encoding="UTF-8"?-->
+</span></div>
                                         </button>
                                       </div>
                                     </div>
@@ -12955,20 +12974,30 @@ TED Recommends
        id="shoji-lattice"></a>
   </div>
 </div>
-<script src="./Ken Robinson_ Do schools kill creativity_ _ TED Talk_files/manifest-cc35c3e3041369a72c71.js"></script>
-<script src="./Ken Robinson_ Do schools kill creativity_ _ TED Talk_files/core-ecf0c62707f480ec3bc4.chunk.js"></script>
+
 <script src="https://players.brightcove.net/5359769130001/eJym6jigi_default/index.min.js"></script>
 <script> var bcPlayerApi = videojs('player-container-bc')
 
 var isPlaying = false;
 
-function toogleVideo() {
-  if (!isPlaying) {
-    playVideo();
-  } else {
-    pauseVideo();
+function isOurButtonClicked(e) {
+  if (e.target.tagName == 'VB-DIV'
+    || e.target.tagName == 'svg' && e.target.parentNode.tagName == 'VB-DIV'
+    || e.target.tagName == 'path' && e.target.parentNode.parentNode.tagName == 'VB-DIV') {
+    return true;
   }
-  isPlaying = !isPlaying;
+  return false;
+}
+
+function toogleVideo(e) {
+  if (!isOurButtonClicked(e)) {
+    if (!isPlaying) {
+      playVideo();
+    } else {
+      pauseVideo();
+    }
+    isPlaying = !isPlaying;
+  }
 }
 
 function playVideo() {
@@ -12987,11 +13016,13 @@ var playButton = document.getElementById('initial-btn-play');
 var progressBarPlayButton = document.getElementById('progress-bar-control-video');
 var videoContainer = document.getElementById('main-video-container');
 videoContainer.addEventListener('click', toogleVideo);
+bcPlayerApi.on('play', function() {
+  playVideo();
+});
 
 
 </script>
-<script src="localhost:8888/static/TED/main.bundle.js"></script>
-<script src="localhost:8888/static/TED/vibbify_ted.js"></script>
+<script src="http://vibby-preprod-vibbify.eu-west-1.elasticbeanstalk.com/static/TED/main.bundle.js"></script>
 
 <script>
   (function () {
