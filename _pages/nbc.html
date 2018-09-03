@@ -14,6 +14,14 @@ description: Discover more from the Olympic Channel, including our TV online so 
 <meta http-equiv="content-type" content="text/html;charset=utf-8"/><!-- /Added by HTTrack -->
 <head>
 
+  <style>
+    #vibbify-btn {
+      float: right;
+      margin-top: -25px;
+      margin-right: 15px;
+    }
+  </style>
+
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Object.values"></script>
 
   <script>
@@ -931,7 +939,7 @@ B: M.Hixon (USA)"/>
                   <button aria-label="close" type="button" class="icon icon-close-button"
                           style="float: right; display: none" id="video-close"></button>
 
-                  <video id="nba-test-player"
+                  <video id="nbc-test-player"
                          class="video-js bc-player ocs-videos"
                          data-video-id="5830222940001"
                          data-account="5359769130001"
@@ -941,6 +949,10 @@ B: M.Hixon (USA)"/>
                          class="video-js"
                          autoplay
                   ></video>
+
+                  <div id="vibbify-btn">
+
+                  </div>
 
                 </div>
               </div>
@@ -1255,7 +1267,7 @@ B: M.Hixon (USA)"/>
 <script src="https://players.brightcove.net/5359769130001/eJym6jigi_default/index.min.js"></script>
 <script>
 
-var bcPlayerApi = videojs('nba-test-player');
+var bcPlayerApi = videojs('nbc-test-player');
 var playerContainer = document.getElementById("video-player-container");
 bcPlayerApi.muted(true);
 playerContainer.addEventListener('click', toogleVideo);
@@ -1294,6 +1306,11 @@ function pauseVideo() {
   googletag.cmd = googletag.cmd || [];
 </script>
 
+
+
+<!--<script src="http://localhost:8888/static/NBC/main.bundle.js"></script>-->
+
+<script src="http://vibby-preprod-vibbify.eu-west-1.elasticbeanstalk.com/static/NBC/main.bundle.js"></script>
 
 <script src="http://static.vilynx.com/gallery/vpg.4.7.4.min.js" publickey="21b1e9d4f3765e384991275b50351227"
         resizetoimage="true" redirect="true" taptoplay="true"
