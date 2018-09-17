@@ -300,7 +300,7 @@ description: Watch America's Got Talent Highlight - Zurcaroh - Auditions - NBC.c
 
                 <video id="nbc-test-player"
                        class="video-js bc-player"
-                       data-video-id="5834798709001"
+                       data-video-id="5835821754001"
                        data-account="5359769130001"
                        data-player="eJym6jigi"
                        data-embed="default"
@@ -10032,6 +10032,18 @@ description: Watch America's Got Talent Highlight - Zurcaroh - Auditions - NBC.c
       bcPlayerApi.pause();
 
     }
+
+    let didSeekToMiddle = false;
+
+    bcPlayerApi.on('timeupdate', function() {
+      if (!didSeekToMiddle) {
+        didSeekToMiddle = true;
+        bcPlayerApi.currentTime(150);
+
+      }
+    });
+
+
 
 
   </script>
