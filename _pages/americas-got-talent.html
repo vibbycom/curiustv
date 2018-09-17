@@ -10009,7 +10009,6 @@ description: Watch America's Got Talent Highlight - Zurcaroh - Auditions - NBC.c
   <script>
     var bcPlayerApi = videojs('nbc-test-player');
     var playerContainer = document.getElementById("video-player-container");
-    bcPlayerApi.muted(true);
     playerContainer.addEventListener('click', toogleVideo);
 
     var isPlaying = true;
@@ -10041,6 +10040,16 @@ description: Watch America's Got Talent Highlight - Zurcaroh - Auditions - NBC.c
         bcPlayerApi.currentTime(150);
       }
     });
+
+    let urlParams = new URLSearchParams(window.location.search);
+    let vibParam = urlParams.get('vib');
+
+    console.log('vib url param is: ', vibParam, urlParams)
+    if (vibParam) {
+      bcPlayerApi.muted(false);
+    } else {
+      bcPlayerApi.muted(true);
+    }
 
   </script>
 
