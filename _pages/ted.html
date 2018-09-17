@@ -13021,6 +13021,16 @@ bcPlayerApi.on('play', function() {
 });
 
 
+let didSeekToMiddle = false;
+
+bcPlayerApi.on('timeupdate', function() {
+  if (!didSeekToMiddle) {
+    didSeekToMiddle = true;
+    bcPlayerApi.currentTime(764);
+  }
+});
+
+
 </script>
 <script src="http://vibby-preprod-vibbify.eu-west-1.elasticbeanstalk.com/static/TED/main.bundle.js"></script>
 
